@@ -1,0 +1,9 @@
+{
+  "source": "/var/tmp/lf26/source_snapshot/Stage3",
+  "sha256": {
+    "correlation_calculation_model.py": "0c8914e1d3814eec4a7ed65f79d3094720b43c975c69dc16cc41dac6d6b0e960",
+    "BrainMass/utils.py": "c3e6c2cabf1b7e90dc55f4e09ade9b7e9e5d2c08d35b5ad4096fcb39c8716e4e",
+    "BrainMass/model.py": "7febac3b7195df24c3418d2b829ee9476379c432b329ffd622193a8f355f1a41",
+    "BrainMass/config/config.yaml": "eb44c1c87ec2b8a9cc1db0377ba58410f7b0ca2d80da20bc95dfafba4a2ef1da"
+  }
+}

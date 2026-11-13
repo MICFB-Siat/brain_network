@@ -1,0 +1,28 @@
+model:
+  feature_dim: 1024
+  depth: 16
+  heads: 10
+  dim_feedforward: 2048
+  in_channels: 200
+  hidden_size: 1024
+  projection_size: 100
+
+trainer:
+  csv: D:\Python Project\Personalized_Functional_BrainNetwork_Construction\Stage3-Adaptive_Correlation_Calculation_Train\BrainMass\down_stream\PPMI_Our.csv
+  batch_size: 8
+  epochs: 100
+  num_workers: 0
+
+test:
+  csv: D:\Python Project\Personalized_Functional_BrainNetwork_Construction\Stage3-Adaptive_Correlation_Calculation_Train\BrainMass\down_stream\PPMI_Our.csv
+  batch_size: 8
+  epochs: 100
+
+optimizer:
+  lr: 0.0003
+  weight_decay: 0.00005
+
+savings:
+  checkpoints: D:\Python Project\Personalized_Functional_BrainNetwork_Construction\Stage3-Adaptive_Correlation_Calculation_Train\Checkpoint\PPMI_Our.pth
+
+pretrained_path: D:\Python Project\Personalized_Functional_BrainNetwork_Construction\Stage3-Adaptive_Correlation_Calculation_Train\Checkpoint\baseline.pth

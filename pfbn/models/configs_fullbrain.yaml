@@ -1,0 +1,22 @@
+
+work_dir: "."
+
+encoder_ckpt: "models/encoder_decoder/encoder_decoder_latest.pth"
+diffusion_ckpt: "models/diffusion/fc_diffusion_latest.pth"
+lora_ckpt: "models/lora_finetuned"
+lora_r: 8
+d1_ckpt: "models/d1/d1_latest.pth"
+d1_ckpt_lh: "models/d1/d1_latest_lh.pth"
+d1_ckpt_rh: "models/d1/d1_latest_rh.pth"
+
+datasets:
+  - ["test_dataset", "./test_dataset"]
+
+device: "cuda"
+gpu: "0"
+use_d1_guided_init: true
+use_personalized_fc: true
+generate_dlabel: true
+d1_time_steps: null
+
+personalized_fc_ckpt_fullbrain: "models/personalized_fc/personalized_fc_fullbrain.pth"
